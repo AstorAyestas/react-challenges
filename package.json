@@ -2,6 +2,7 @@
     "name": "react-challenges",
     "version": "0.1.0",
     "private": true,
+    "homepage": "https://astorayestas.github.io/react-challenges",
     "dependencies": {
         "@craco/craco": "^6.1.1",
         "@testing-library/jest-dom": "^5.11.10",
