@@ -1,9 +1,10 @@
+import { Link } from '@reach/router';
 import React from 'react';
 import './Header.css';
 const Header = () => {
     return (
         <header className="sticky top-0 flex items-center justify-between h-16 px-2 bg-gray-100 shadow-md opacity-75">
-            <div className="flex items-center space-x-2">
+            <div>
                 <a target="_blank" rel="noreferrer" href="https://astorayestas.tk">
                     <svg className="w-10 h-10 shadow-md" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g filter="url(#filter0_f)">
@@ -40,6 +41,7 @@ const Header = () => {
                     </svg>
                 </a>
             </div>
+            <Link className='font-semibold text-blue-500 hover:underline' to='/'>Home</Link>
         </header>)
 }
 

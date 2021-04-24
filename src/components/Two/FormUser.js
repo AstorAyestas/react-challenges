@@ -1,4 +1,4 @@
-import React, {useContext} from 'react';
+import React, { useContext } from 'react';
 import ProfileContext from '../../contexts/ProfileContext';
 import useForm from '../../hooks/useForm';
 
@@ -8,19 +8,20 @@ const FormUser = () => {
         category: ''
     }
     const profile = useContext(ProfileContext)
+
     const handleSubmit = (e) => {
         e.preventDefault()
         profile.setProfile(
-            user,
-            category
+            {
+                user: form.user,
+                category: form.category
+            }
         );
-        console.log(user, category);
-        console.log(profile.profile);
     }
 
     const { handleChange, user, category, form } = useForm(dataForm);
     return (
-        <div className='flex justify-center '>
+        <div className='flex justify-center mt-2'>
             <form autoComplete='off' onSubmit={handleSubmit} className='space-y-2'>
                 <div className='flex flex-col'>
                     <label className='text-gray-600'>Usuario</label>
@@ -37,6 +38,11 @@ const FormUser = () => {
                 </div>
                 <button className='w-full p-2 text-gray-200 bg-gray-600 rounded hover:bg-gray-700' type='submit'>Jugar</button>
             </form>
+            {/* <pre>
+                {
+                    JSON.stringify(form, null, 3)
+                }
+            </pre> */}
         </div>
     )
 }
