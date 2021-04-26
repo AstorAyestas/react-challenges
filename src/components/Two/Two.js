@@ -1,6 +1,9 @@
 import { useState } from 'react';
 import FormUser from './FormUser';
 import ProfileContext from '../../contexts/ProfileContext';
+import { Router } from '@reach/router';
+import Trivia from './Trivia';
+import NotFound from '../NotFound';
 
 // const profile = {
 //     user: '',
@@ -16,7 +19,11 @@ const Two = () => {
                 {JSON.stringify( profile ,null ,2)}
             </p> */}
             <ProfileContext.Provider value={{ profile, setProfile }}>
-                <FormUser />
+                <Router>
+                    <FormUser path='/' />
+                    <Trivia path='trivia' />
+                    <NotFound default />
+                </Router>
             </ProfileContext.Provider>
         </>
     );
