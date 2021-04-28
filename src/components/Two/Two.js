@@ -12,7 +12,7 @@ const Two = () => {
             <ProfileContext.Provider value={{ profile, setProfile }}>
                 <Router>
                     <FormUser path='/' />
-                    <Trivia path='trivia' />
+                    <Trivia path='trivia/:category' />
                     <NotFound default />
                 </Router>
             </ProfileContext.Provider>

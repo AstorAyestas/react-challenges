@@ -1,106 +1,106 @@
  [
     {
         "id": 1,
-        "category": "Futbol",
-        "question": "Pregunta futbol 1",
+        "category": "soccer",
+        "question": "question soccer 1",
         "options": ["option 1", "option 2", "option 3", "option 4", "option 5"],
         "answer": 0
     },
     {
         "id": 2,
-        "category": "Futbol",
-        "question": "Pregunta futbol 2",
+        "category": "soccer",
+        "question": "question soccer 2",
         "options": ["option 1", "option 2", "option 3", "option 4", "option 5"],
         "answer": 1
     },
     {
         "id": 3,
-        "category": "Futbol",
-        "question": "Pregunta futbol 3",
+        "category": "soccer",
+        "question": "question soccer 3",
         "options": ["option 1", "option 2", "option 3", "option 4", "option 5"],
         "answer": 2
     },
     {
         "id": 4,
-        "category": "Futbol",
-        "question": "Pregunta futbol 4",
+        "category": "soccer",
+        "question": "question soccer 4",
         "options": ["option 1", "option 2", "option 3", "option 4", "option 5"],
         "answer": 3
     },
     {
         "id": 5,
-        "category": "Futbol",
-        "question": "Pregunta futbol 5",
+        "category": "soccer",
+        "question": "question soccer 5",
         "options": ["option 1", "option 2", "option 3", "option 4", "option 5"],
         "answer": 4
     },
     {
         "id": 6,
-        "category": "Historia",
-        "question": "Pregunta historia 1",
+        "category": "history",
+        "question": "question history 1",
         "options": ["option 1", "option 2", "option 3", "option 4", "option 5"],
         "answer": 0
     },
     {
         "id": 7,
-        "category": "Historia",
-        "question": "Pregunta historia 2",
+        "category": "history",
+        "question": "question history 2",
         "options": ["option 1", "option 2", "option 3", "option 4", "option 5"],
         "answer": 1
     },
     {
         "id": 8,
-        "category": "Historia",
-        "question": "Pregunta historia 3",
+        "category": "history",
+        "question": "question history 3",
         "options": ["option 1", "option 2", "option 3", "option 4", "option 5"],
         "answer": 2
     },
     {
         "id": 9,
-        "category": "Historia",
-        "question": "Pregunta historia 4",
+        "category": "history",
+        "question": "question history 4",
         "options": ["option 1", "option 2", "option 3", "option 4", "option 5"],
         "answer": 3
     },
     {
         "id": 10,
-        "category": "Historia",
-        "question": "Pregunta historia 5",
+        "category": "history",
+        "question": "question history 5",
         "options": ["option 1", "option 2", "option 3", "option 4", "option 5"],
         "answer": 4
     },
     {
         "id": 11,
-        "category": "Pop",
-        "question": "Pregunta pop 1",
+        "category": "pop",
+        "question": "question pop 1",
         "options": ["option 1", "option 2", "option 3", "option 4", "option 5"],
         "answer": 0
     },
     {
         "id": 12,
-        "category": "Pop",
-        "question": "Pregunta pop 2",
+        "category": "pop",
+        "question": "question pop 2",
         "options": ["option 1", "option 2", "option 3", "option 4", "option 5"],
         "answer": 1
     },
     {
         "id": 13,
-        "category": "Pop",
-        "question": "Pregunta pop 3",
+        "category": "pop",
+        "question": "question pop 3",
         "options": ["option 1", "option 2", "option 3", "option 4", "option 5"],
         "answer": 2
     },
     {
         "id": 14,
-        "category": "Pop",
-        "question": "Pregunta pop 4",
+        "category": "pop",
+        "question": "question pop 4",
         "options": ["option 1", "option 2", "option 3", "option 4", "option 5"],
         "answer": 3
     },
     {
         "id": 15,
-        "category": "Pop",
-        "question": "Pregunta pop 5",
+        "category": "pop",
+        "question": "question pop 5",
         "options": ["option 1", "option 2", "option 3", "option 4", "option 5"],
         "answer": 4
     }

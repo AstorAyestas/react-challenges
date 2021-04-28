@@ -41,7 +41,7 @@ const Header = () => {
                     </svg>
                 </a>
             </div>
-            <Link className='font-semibold text-blue-500 hover:underline' to='react-challenges'>Home</Link>
+            <Link className='font-semibold text-blue-500 hover:underline' to='/react-challenges'>Home</Link>
         </header>)
 }
 

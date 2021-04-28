@@ -1,32 +1,36 @@
-import React, { useState } from 'react'
-import Result from './Result'
+import React, { useState, useEffect } from 'react';
 
-const Play = ({ filter }) => {
-    const [answers, setAnswers] = useState([])
+const Play = ({ filter, setAnswers, setTime }) => {
     const [marked, setMarked] = useState(0)
-    const [correct, setCorrect] = useState(null)
+    
+    useEffect(() => {
+        setTime(Date.now())
+        return () => {
+        setTime( (time) =>{
+            const sub = (Date.now() - time);
+            return( Math.floor(sub/1000))
+        } )
+        }
+    }, [filter,setTime])
+    
     const handleClick = (index) => {
-        setAnswers((answers) => [...answers, index])
-        marked < filter.length -1 && setMarked((marked) => marked + 1)
+        setAnswers(
+            (answers) => {
+                return filter[marked].answer === index ? [...answers, 1] : [...answers, 0]
+            }
+        )
+        marked < filter.length && setMarked((marked) => marked + 1)
     }
     return (
         <div className='flex flex-col items-center justify-center h-screen bg-indigo-100 rounded-md'>
-            {
-                filter.length === answers.length && (<pre className='bg-white'>
-                    {JSON.stringify(answers, null, 3)}
-                </pre>
-                )
-            }
-            <p className='text-4xl font-bold text-indigo-500'>{filter[marked].question}</p>
+            <p className='text-4xl font-bold text-indigo-500 capitalize'>{filter[marked].question}</p>
             <ul className='flex my-2 space-x-4 cursor-pointer'>
                 {
                     filter[marked].options.map((option, index) => (
-                        <li className='p-4 font-bold text-indigo-100 bg-indigo-400 rounded-md hover:bg-indigo-500' onClick={() => { handleClick(index) }} key={option} >{option}</li>
+                        <li className='p-4 font-bold text-indigo-100 capitalize bg-indigo-400 rounded-md hover:bg-indigo-500' onClick={() => { handleClick(index) }} key={option} >{option}</li>
                     ))
                 }
             </ul>
-                <Result correct = {correct} />
-
         </div>
     )
 }
