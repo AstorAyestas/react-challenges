@@ -1,107 +1,182 @@
- [
+[
     {
         "id": 1,
         "category": "soccer",
-        "question": "question soccer 1",
-        "options": ["option 1", "option 2", "option 3", "option 4", "option 5"],
+        "question": "miroslav klose is the top scorer in world cup history but ... with how many goals?",
+        "options": [
+            "sixteen",
+            "fifteen",
+            "fourteen",
+            "seventeen"
+        ],
         "answer": 0
     },
     {
         "id": 2,
         "category": "soccer",
-        "question": "question soccer 2",
-        "options": ["option 1", "option 2", "option 3", "option 4", "option 5"],
-        "answer": 1
+        "question": "which south american team has the most copa libertadores in its record?",
+        "options": [
+            "peñarol",
+            "boca juniors",
+            "estudiantes",
+            "independiente"
+        ],
+        "answer": 3
     },
     {
         "id": 3,
         "category": "soccer",
-        "question": "question soccer 3",
-        "options": ["option 1", "option 2", "option 3", "option 4", "option 5"],
-        "answer": 2
+        "question": "how many world cups are there between brazil, italy and germany?",
+        "options": [
+            "twelve",
+            "eleven",
+            "fourteen",
+            "thirteen"
+        ],
+        "answer": 3
     },
     {
         "id": 4,
         "category": "soccer",
-        "question": "question soccer 4",
-        "options": ["option 1", "option 2", "option 3", "option 4", "option 5"],
-        "answer": 3
+        "question": "what is leicester city's nickname?",
+        "options": [
+            "the foxes",
+            "the cats",
+            "the blues",
+            "the wolves"
+        ],
+        "answer": 0
     },
     {
         "id": 5,
         "category": "soccer",
-        "question": "question soccer 5",
-        "options": ["option 1", "option 2", "option 3", "option 4", "option 5"],
-        "answer": 4
+        "question": "which team is the most times winner of the uefa champions league?",
+        "options": [
+            "barcelona",
+            "chelsea",
+            "real madrid",
+            "bayern múnich"
+        ],
+        "answer": 2
     },
     {
         "id": 6,
         "category": "history",
         "question": "question history 1",
-        "options": ["option 1", "option 2", "option 3", "option 4", "option 5"],
+        "options": [
+            "option 1",
+            "option 2",
+            "option 3",
+            "option 4"
+        ],
         "answer": 0
     },
     {
         "id": 7,
         "category": "history",
         "question": "question history 2",
-        "options": ["option 1", "option 2", "option 3", "option 4", "option 5"],
+        "options": [
+            "option 1",
+            "option 2",
+            "option 3",
+            "option 4"
+        ],
         "answer": 1
     },
     {
         "id": 8,
         "category": "history",
         "question": "question history 3",
-        "options": ["option 1", "option 2", "option 3", "option 4", "option 5"],
+        "options": [
+            "option 1",
+            "option 2",
+            "option 3",
+            "option 4"
+        ],
         "answer": 2
     },
     {
         "id": 9,
         "category": "history",
         "question": "question history 4",
-        "options": ["option 1", "option 2", "option 3", "option 4", "option 5"],
+        "options": [
+            "option 1",
+            "option 2",
+            "option 3",
+            "option 4"
+        ],
         "answer": 3
     },
     {
         "id": 10,
         "category": "history",
         "question": "question history 5",
-        "options": ["option 1", "option 2", "option 3", "option 4", "option 5"],
-        "answer": 4
+        "options": [
+            "option 1",
+            "option 2",
+            "option 3",
+            "option 4"
+        ],
+        "answer": 3
     },
     {
         "id": 11,
         "category": "pop",
         "question": "question pop 1",
-        "options": ["option 1", "option 2", "option 3", "option 4", "option 5"],
+        "options": [
+            "option 1",
+            "option 2",
+            "option 3",
+            "option 4"
+        ],
         "answer": 0
     },
     {
         "id": 12,
         "category": "pop",
         "question": "question pop 2",
-        "options": ["option 1", "option 2", "option 3", "option 4", "option 5"],
+        "options": [
+            "option 1",
+            "option 2",
+            "option 3",
+            "option 4"
+        ],
         "answer": 1
     },
     {
         "id": 13,
         "category": "pop",
         "question": "question pop 3",
-        "options": ["option 1", "option 2", "option 3", "option 4", "option 5"],
+        "options": [
+            "option 1",
+            "option 2",
+            "option 3",
+            "option 4"
+        ],
         "answer": 2
     },
     {
         "id": 14,
         "category": "pop",
         "question": "question pop 4",
-        "options": ["option 1", "option 2", "option 3", "option 4", "option 5"],
+        "options": [
+            "option 1",
+            "option 2",
+            "option 3",
+            "option 4"
+        ],
         "answer": 3
     },
     {
         "id": 15,
         "category": "pop",
         "question": "question pop 5",
-        "options": ["option 1", "option 2", "option 3", "option 4", "option 5"],
-        "answer": 4
+        "options": [
+            "option 1",
+            "option 2",
+            "option 3",
+            "option 4"
+        ],
+        "answer": 3
     }
 ]

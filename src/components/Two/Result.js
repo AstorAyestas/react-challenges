@@ -1,14 +1,17 @@
-import React, { useMemo } from 'react'
+import React, { useMemo, useContext } from 'react'
+import ProfileContext from '../../contexts/ProfileContext'
+import ranking from '../../utils/ranking.json'
 
 const Result = ({ answers, time }) => {
+    const { profile } = useContext(ProfileContext)
+    // const compare = (a, b) => a - b;
+    // const rank = useMemo(() => ranking.sort(compare))
     const accumulator = (acc, num) => (acc + num * 5);
-
     const total = useMemo(() => answers.reduce(accumulator, 0), [answers])
     return (
-        <div className='flex items-center justify-center h-screen'>
-            <div className='flex p-4 bg-indigo-400 rounded-md '>
-                <p className='p-6 text-2xl font-bold text-indigo-100'>Your score is {total}</p>
-                <p className='p-6 text-2xl font-bold text-indigo-100'>Your time is {time} S</p>
+        <div className='flex flex-col items-center justify-center w-screen h-screen'>
+            <div className='flex items-center p-4 rounded-md shadow-md bg-gradient-to-br from-purple-100 to-purple-300'>
+                <p className='text-purple-500 md:text-2xl'>Congrats {profile.user} your score is {total} with a time of {time} s</p>
                 <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
                     <path d="M40.0001 70.4762C56.8316 70.4762 70.4763 56.8315 70.4763 40C70.4763 23.1685 56.8316 9.5238 40.0001 9.5238C23.1686 9.5238 9.52393 23.1685 9.52393 40C9.52393 56.8315 23.1686 70.4762 40.0001 70.4762Z" fill="url(#paint0_radial)" />
                     <path opacity="0.5" d="M40.0001 70.4762C56.8316 70.4762 70.4763 56.8315 70.4763 40C70.4763 23.1685 56.8316 9.5238 40.0001 9.5238C23.1686 9.5238 9.52393 23.1685 9.52393 40C9.52393 56.8315 23.1686 70.4762 40.0001 70.4762Z" fill="url(#paint1_radial)" />
@@ -143,6 +146,25 @@ const Result = ({ answers, time }) => {
                         </radialGradient>
                     </defs>
                 </svg>
+            </div>
+            <div>
+                <ol className='flex items-end mt-4 space-x-4'>
+                    {
+                        ranking.map((item, index) => (
+                            <ul className={`flex flex-col items-center p-${8 - (index)} text-xl text-purple-500 rounded-sm shadow-md bg-gradient-to-br from-purple-100 to-purple-300`}>
+                                <div>
+                                    {item.user}
+                                </div>
+                                <div>
+                                    {item.score}
+                                </div>
+                                <div>
+                                    {item.time}
+                                </div>
+                            </ul>
+                        ))
+                    }
+                </ol>
             </div>
         </div>
     )

@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "user": "Astor",
+        "score": 25,
+        "time": 20
+    },
+    {
+        "id": 2,
+        "user": "Joel",
+        "score": 20,
+        "time": 22
+    },
+    {
+        "id": 3,
+        "user": "Fernanda",
+        "score": 15,
+        "time": 14
+    },
+    {
+        "id": 4,
+        "user": "Rogelio",
+        "score": 10,
+        "time": 12
+    },
+    {
+        "id": 5,
+        "user": "Lopez",
+        "score": 5,
+        "time": 5
+    }
+]

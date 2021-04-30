@@ -54,7 +54,7 @@ Tiempo máximo 1hr.
 
 ## *Ejercicio 2: Trivia*
 
-construye una aplicación que cuando ingreses deberá pedir ingresar algunos datos luego de eso podré elegir una categoría de preguntas y a continuación, mostrará de manera aleatoria preguntas que se encuentran en un banco de preguntas con 5 simples respuestas, pero solo una es la correcta debe pedirme responder 20 preguntas, y cuando termine la ultima, debe entregarme un mensaje de felicitaciones y agregarme al ranking de usuarios que han terminado el juego de trivia a demás debe mostrarme el tiempo que me tomó terminar esta trivia.
+construye una aplicación que cuando ingreses deberá pedir ingresar algunos datos luego de eso podré elegir una categoría de preguntas y a continuación, mostrará de manera aleatoria preguntas que se encuentran en un banco de preguntas con 5*(4) simples respuestas, pero solo una es la correcta debe pedirme responder 20 preguntas, y cuando termine la ultima, debe entregarme un mensaje de felicitaciones y agregarme al ranking de usuarios que han terminado el juego de trivia a demás debe mostrarme el tiempo que me tomó terminar esta trivia.
 
 ## *Ejercicio 3: Juego de memoria*
 
