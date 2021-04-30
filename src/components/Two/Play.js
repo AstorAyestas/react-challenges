@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-const Play = ({ filter, setAnswers, setTime }) => {
+const Play = ({ filtered, setAnswers, setTime }) => {
     const [marked, setMarked] = useState(0)
     
     useEffect(() => {
@@ -11,22 +11,22 @@ const Play = ({ filter, setAnswers, setTime }) => {
             return( Math.floor(sub/1000))
         } )
         }
-    }, [filter,setTime])
+    }, [filtered,setTime])
     
     const handleClick = (index) => {
         setAnswers(
             (answers) => {
-                return filter[marked].answer === index ? [...answers, 1] : [...answers, 0]
+                return filtered[marked].answer === index ? [...answers, 1] : [...answers, 0]
             }
         )
-        marked < filter.length && setMarked((marked) => marked + 1)
+        marked < filtered.length && setMarked((marked) => marked + 1)
     }
     return (
         <div className='flex flex-col items-center justify-center h-screen bg-indigo-100 rounded-md'>
-            <p className='text-4xl font-bold text-indigo-500 capitalize'>{filter[marked].question}</p>
+            <p className='text-4xl font-bold text-indigo-500 capitalize'>{filtered[marked].question}</p>
             <ul className='flex my-2 space-x-4 cursor-pointer'>
                 {
-                    filter[marked].options.map((option, index) => (
+                    filtered[marked].options.map((option, index) => (
                         <li className='p-4 font-bold text-indigo-100 capitalize bg-indigo-400 rounded-md hover:bg-indigo-500' onClick={() => { handleClick(index) }} key={option} >{option}</li>
                     ))
                 }

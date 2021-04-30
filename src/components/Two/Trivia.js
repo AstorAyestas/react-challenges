@@ -11,9 +11,9 @@ const Trivia = () => {
     const [time, setTime] = useState(0)
     const { category } = useParams()
     const filterTrivias = () => trivias.filter(item => item.category === category);
-    const filter = useMemo(filterTrivias, [category])
+    const filtered = useMemo(filterTrivias, [category])
 
-    if (filter.length === 0) {
+    if (filtered.length === 0) {
          return <Redirect to='/react-challenges' noThrow/>
     }
     return (
@@ -21,7 +21,7 @@ const Trivia = () => {
             {profile.user && <h5 className='font-bold text-indigo-500 capitalize'>User: {profile.user}</h5>}
             <h5 className='font-bold text-indigo-500 capitalize'>Category: {category}</h5>
             {
-                answers.length === filter.length ? <Result answers={answers} time={time} /> : <Play filter={filter} setAnswers={setAnswers} setTime={setTime} />
+                answers.length === filtered.length ? <Result answers={answers} time={time} /> : <Play filtered={filtered} setAnswers={setAnswers} setTime={setTime} />
             }
         </div>
     )
